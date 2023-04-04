@@ -4,7 +4,7 @@
     padding: 0;
 }
 .grid.wide {
-    max-width: calc(100% - 48px);
+    max-width: 100%;
     margin: 0 auto;
 }
 .row {

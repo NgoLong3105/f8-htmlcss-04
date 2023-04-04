@@ -45,6 +45,12 @@ body {
     font-family: "Sora";
     color: var(--main-color);
 }
+.decor {
+    position: absolute;
+}
+.half {
+    display: flex;
+}
 img {
     display: block;
 }
