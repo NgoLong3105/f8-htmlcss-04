@@ -38,6 +38,18 @@ body {
     --while-color: #fff;
     --black-color: #000;
 }
+img {
+    display: block;
+}
+a {
+    text-decoration: none;
+}
+.block {
+    display: block;
+}
+.none {
+    display: none;
+}
 .heading {
     font-weight: 700;
     font-size: 5.2rem;
@@ -51,18 +63,13 @@ body {
 .half {
     display: flex;
 }
-img {
-    display: block;
-}
-a {
-    text-decoration: none;
-}
 
 .btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     height: 56px;
+    line-height: 56px;
     min-width: 117px;
     color: #fff;
     font-weight: 500;
@@ -72,7 +79,7 @@ a {
     background: #ff5b2e;
 }
 .btn:hover {
-    opacity: 0.75;
+    opacity: 0.6;
     cursor: pointer;
 }
 .btn.btn--primary {

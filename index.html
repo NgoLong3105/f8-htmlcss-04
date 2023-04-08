@@ -47,16 +47,16 @@
                 </a>
                 <ul class="nav-list">
                     <li class="nav-item">
-                        <a href="#!" class="nav-link">Home</a>
+                        <a href="#" class="nav-link">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#!" class="nav-link">About</a>
+                        <a href="#about" class="nav-link">About</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#!" class="nav-link">Services & Rates</a>
+                        <a href="#services" class="nav-link">Services & Rates</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#!" class="nav-link">Reviewa</a>
+                        <a href="#reviewa" class="nav-link">Reviewa</a>
                     </li>
                     <li class="nav-item">
                         <a href="#!" class="nav-link">Contacts us</a>
@@ -140,7 +140,7 @@
 
     <main class="main">
         <!-- about -->
-        <section class="about">
+        <section id="about" class="about">
             <div class="grid wide">
                 <section class="about__body half">
                     <div class="about__group">
@@ -257,7 +257,7 @@
         </section>
 
         <!-- service -->
-        <section class="service">
+        <section id="services" class="service">
             <div class="grid wide">
                 <section class="service__top">
                     <p class="service__desc">What we do for you?</p>
@@ -471,7 +471,72 @@
         </section>
 
         <!-- testimounial -->
-        section.tes
+        <section id="reviewa" class="testimounial">
+            <div class="grid wide">
+                <section class="testimounial__wrapper">
+                    <div class="testimounial__list-wrapper">
+                        <ul class="testimounial__list">
+                            <li class="testimounial__item">
+                                <figure class="testimounial__image">
+                                    <img src="./assets/img/our-reviews.png" alt="" class="testimounial__img">
+                                </figure>
+                                <div class="testimounial__text">
+                                    <h2 class="heading">Our Reviews</h2>
+                                    <p class="testimounial__desc">“It was very comforting to recieve a text and pics
+                                        each day about our pets and how they were doing. It was also nice that my pets
+                                        were in the comfortable environment of their own home and received playfull
+                                        attention from our pet sitters as well. Thanks so much!”
+                                    </p>
+                                    <div class="testimounial__author">Karla Deras</div>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="testimounial__carousel-dots">
+                            <div class="testimounial__carousel-dot testimounial__carousel-dot--active"></div>
+                            <div class="testimounial__carousel-dot"></div>
+                            <div class="testimounial__carousel-dot"></div>
+                            <div class="testimounial__carousel-dot"></div>
+                        </div>
+                    </div>
+
+                    <div class="testimounial__arrow testimounial__arrow--left">
+                        <svg class="block" width="20" height="21" viewBox="0 0 20 21" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.875 10.9985H3.125" stroke="#FF5B2E" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M8.75 5.37354L3.125 10.9985L8.75 16.6235" stroke="#FF5B2E" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <div class="testimounial__arrow testimounial__arrow--right">
+                        <svg class="block" width="20" height="21" viewBox="0 0 20 21" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.875 10.9985H3.125" stroke="#FF5B2E" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M8.75 5.37354L3.125 10.9985L8.75 16.6235" stroke="#FF5B2E" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <!-- blog -->
+        <section class="blog">
+            <div class="grid wide">
+                <section class="blog__body">
+                    <div class="blog__top">
+                        <h2 class="blog__heading heading">Our Blog</h2>
+                        <div class="blog__top-wrap">
+                            <div class="blog__top-desc">Stay up to date with the latest tech trands and news in the
+                                pets.</div>
+                            <button class="btn btn--while blog__top-btn">View All Blog</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
     </main>
 </body>
 
