@@ -37,34 +37,34 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
-<body style="height: 6000px;">
+<body>
     <!-- header -->
     <header class="fixed-header">
         <div class="grid wide">
-            <nav class="header-top">
-                <a href="#" class="logo-link">
+            <nav class="nav">
+                <a href="#" class="nav__logo">
                     <img src="./assets/icon/Logo-lucy.svg" alt="Lucy" class="logo-img">
                 </a>
-                <ul class="nav-list">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Home</a>
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="#about" class="nav-link">About</a>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="#services" class="nav-link">Services & Rates</a>
+                    <li class="nav__item">
+                        <a href="#services" class="nav__link">Services & Rates</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="#reviewa" class="nav-link">Reviewa</a>
+                    <li class="nav__item">
+                        <a href="#reviewa" class="nav__link">Reviewa</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="#blog" class="nav-link">Contacts us</a>
+                    <li class="nav__item">
+                        <a href="#blog" class="nav__link">Contacts us</a>
                     </li>
                 </ul>
-                <div class="nav-button">
-                    <a class="nav-btn--link btn btn-none" href="#!">Sign in</a>
-                    <button class="nav-btn btn btn-none">Sign up</button>
+                <div class="nav__button">
+                    <a class="nav__btn--link btn btn-none" href="#!">Sign in</a>
+                    <button class="nav__btn btn btn-none">Sign up</button>
                 </div>
             </nav>
         </div>
@@ -73,42 +73,40 @@
     <!-- hero -->
     <div class="hero">
         <div class="grid wide">
-            <section class="hero-body">
-                <div class="hero-list__img">
-                    <figure class="hero-img--wrap">
+            <section class="hero__body">
+                <div class="hero-wrap__img">
+                    <figure class="hero__image">
                         <img src="./assets/icon/meomeo.png" alt="Established & Trusted Pet Care Service"
-                            class="hero-img">
+                            class="hero__img">
                         <!-- icon -->
-                        <img src="./assets/icon/icon-right.svg" alt="" class="hero-decor hero-decor--right">
-                        <img src="./assets/icon/icon-left.svg" alt="" class="hero-decor hero-decor--left">
+                        <img src="./assets/icon/icon-right.svg" alt="" class="hero__decor hero__decor--right">
+                        <img src="./assets/icon/icon-left.svg" alt="" class="hero__decor hero__decor--left">
                     </figure>
 
-                    <figure class="hero-img--wrap hero-img--fit">
+                    <figure class="hero__image hero__img--fit">
                         <img src="./assets/icon/concho.png" alt="Established & Trusted Pet Care Service"
-                            class="hero-img">
+                            class="hero__img">
                     </figure>
 
-                    <div class="hero-block">
-                        <div class="hero-card">
-                            <div class="hero-info">
-                                <img src="./assets/img/cho-nho-1.png" alt="Pet Health" class="hero-img--small">
-                                <div class="hero-group">
-                                    <p class="hero-name">Pet Health</p>
-                                    <div class="hero-span">
-                                        <span class="hero-span--long"></span>
-                                        <span class="hero-span--short"></span>
-                                    </div>
+                    <div class="hero-wrap__text">
+                        <div class="hero__info">
+                            <img src="./assets/img/cho-nho-1.png" alt="Pet Health" class="hero__img--small">
+                            <div class="hero__group">
+                                <p class="hero__name">Pet Health</p>
+                                <div class="hero__span">
+                                    <span class="hero__span--long"></span>
+                                    <span class="hero__span--short"></span>
                                 </div>
                             </div>
-                            <div class="hero-hr"></div>
-                            <div class="hero-info">
-                                <img src="./assets/img/cho-nho-2.png" alt="Pet care" class="hero-img--small">
-                                <div class="hero-group">
-                                    <p class="hero-name">Pet care</p>
-                                    <div class="hero-span">
-                                        <span class="hero-span--long"></span>
-                                        <span class="hero-span--short"></span>
-                                    </div>
+                        </div>
+                        <div class="hero__hr"></div>
+                        <div class="hero__info">
+                            <img src="./assets/img/cho-nho-2.png" alt="Pet care" class="hero__img--small">
+                            <div class="hero__group">
+                                <p class="hero__name">Pet care</p>
+                                <div class="hero__span">
+                                    <span class="hero__span--long"></span>
+                                    <span class="hero__span--short"></span>
                                 </div>
                             </div>
                         </div>
@@ -116,19 +114,13 @@
                 </div>
 
                 <section class="hero-block__text">
-                    <h1 class="hero-heading">Established & Trusted Pet Care Service</h1>
-                    <p class="hero-desc">Discover a wide variety of Pawsitive services to choose from, including
+                    <h1 class="hero__heading">Established & Trusted Pet Care Service</h1>
+                    <p class="hero__desc">Discover a wide variety of Pawsitive services to choose from, including
                         daycare, private walks, office duty and spa.</p>
-                    <div class="hero-block__btn">
-                        <div class="hero-btn btn btn--primary">
+                    <div class="hero__block__btn">
+                        <div class="hero__btn btn btn--primary">
                             <div class="hero-btn__text">Book a Meet</div>
-                            <div class="hero-btn__icon">
-                                <svg width="10" height="10" viewBox="0 0 5 6" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1.48584 0.5L3.98584 3L1.48584 5.5" stroke="#FD5056" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                </svg>
-                            </div>
+                            <img src="./assets/icon/muitenphai.svg" alt="" class="hero-btn__icon">
                         </div>
                         <a href="#!" class="hero-btn__link">Schedule a Call</a>
                     </div>

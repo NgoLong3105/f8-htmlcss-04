@@ -1,10 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
 .fixed-header {
     position: sticky;
     top: -18px;
@@ -13,7 +6,7 @@
     z-index: 10;
     background: #fffaf5;
 }
-.header-top {
+.nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -25,28 +18,26 @@
             justify-content: space-between;
     padding-top: 26px;
 }
-.logo-link {
+.nav__logo {
     display: block;
 }
-.logo-img {
-}
-.nav-list {
+.nav__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
 }
-.nav-item {
+.nav__item {
     padding: 10px;
     margin: 0 8px;
 }
-.nav-link {
+.nav__link {
     color: #5e6085;
 }
-.nav-link:hover {
+.nav__link:hover {
     color: var(--main-color);
     text-decoration: underline;
 }
-.nav-button {
+.nav__button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -57,7 +48,7 @@
         -ms-flex-pack: center;
             justify-content: center;
 }
-.nav-btn {
+.nav__btn {
     width: 117px;
     height: 50px;
     font-weight: 600;
@@ -66,7 +57,7 @@
     color: var(--main-color);
     border: 1px solid var(--main-color);
 }
-.nav-btn--link {
+.nav__btn--link {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -87,7 +78,7 @@
 .hero {
     padding: 98px 0 94px;
 }
-.hero-body {
+.hero__body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -96,45 +87,43 @@
             justify-content: space-between;
 }
 /* img  */
-.hero-list__img {
+.hero-wrap__img {
     position: relative;
     width: 50%;
     height: 488px;
 }
-.hero-img--wrap {
+.hero__image {
     position: relative;
     width: 388px;
     height: 488px;
     -o-object-fit: cover;
        object-fit: cover;
     border-radius: 16px;
-    /* background: #fe997b; */
     border: 3px solid #ffffff;
     -webkit-box-shadow: 11px 18px 65px rgba(255, 155, 121, 0.12);
-            box-shadow: 11px 18px 65px rgba(255, 155, 121, 0.12);
-    background: -webkit-gradient(linear, left top, left bottom, from(#ffa78d), to(#ff8c60));
+    box-shadow: 11px 18px 65px rgba(255, 155, 121, 0.12);
     background: -o-linear-gradient(top, #ffa78d 0%, #ff8c60 100%);
     background: linear-gradient(180deg, #ffa78d 0%, #ff8c60 100%);
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffa78d), to(#ff8c60));
 }
 
-.hero-img {
-    /* max-width: 100%; */
+.hero__img {
     max-height: 100%;
     border-radius: inherit;
 }
-.hero-decor {
+.hero__decor {
     position: absolute;
     z-index: -1;
 }
-.hero-decor--right {
+.hero__decor--right {
     top: 16px;
     right: -43px;
 }
-.hero-decor--left {
+.hero__decor--left {
     left: -58px;
     bottom: 10px;
 }
-.hero-img--fit {
+.hero__img--fit {
     position: absolute;
     right: 0;
     bottom: -60px;
@@ -146,24 +135,22 @@
     background: -o-linear-gradient(244.36deg, #faa7ad 4.68%, #e87f8a 98.09%);
     background: linear-gradient(205.64deg, #faa7ad 4.68%, #e87f8a 98.09%);
 }
-.hero-img--fit img {
+.hero__img--fit img {
     padding-top: 21px;
 }
-.hero-block {
+.hero-wrap__text {
     position: absolute;
     right: 32%;
     bottom: -90px;
     width: 250px;
     height: 156px;
+    padding: 18px 14px;
     background: #fff;
     border-radius: 10px;
     -webkit-box-shadow: -17px 14px 68px -4px rgba(207, 174, 132, 0.25);
             box-shadow: -17px 14px 68px -4px rgba(207, 174, 132, 0.25);
 }
-.hero-card {
-    padding: 18px 14px;
-}
-.hero-info {
+.hero__info {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -176,7 +163,7 @@
     width: 169px;
     height: 40px;
 }
-.hero-img--small {
+.hero__img--small {
     width: 40px;
     height: 40px;
     background: #fec23f;
@@ -184,60 +171,58 @@
     -webkit-filter: drop-shadow(0px 4px 21px rgba(247, 167, 12, 0.32));
             filter: drop-shadow(0px 4px 21px rgba(247, 167, 12, 0.32));
 }
-.hero-group {
+.hero__group {
     margin-left: 8.62px;
 }
-.hero-name {
+.hero__name {
     font-family: "Sora", sans-serif;
     font-weight: 600;
     color: #181e52;
 }
-.hero-span {
+.hero__span {
     margin-top: 7px;
     opacity: 0.08;
     border-radius: 10px;
 }
-.hero-span--long {
+.hero__span--long {
     display: block;
     width: 118px;
     border-radius: inherit;
     border: 3px solid var(--main-color);
 }
-.hero-span--short {
+.hero__span--short {
     display: block;
     margin-top: 6px;
     width: 39px;
     border-radius: inherit;
     border: 3px solid var(--main-color);
 }
-.hero-hr {
+.hero__hr {
     height: 2px;
     width: 222px;
     margin: 20px 0;
     background: #f2f2f2;
-}
-.hero-hr {
 }
 /* text  */
 .hero-block__text {
     width: 50%;
     margin: 71px 0 0 86.6px;
 }
-.hero-heading {
+.hero__heading {
     font-weight: 800;
     font-size: 6.6rem;
     line-height: 1.15;
     font-family: "Sora";
     color: var(--main-color);
 }
-.hero-desc {
+.hero__desc {
     color: #656689;
     font-weight: 400;
     font-size: 1.6rem;
     line-height: 1.88;
     margin: 24px 0 38px;
 }
-.hero-block__btn {
+.hero__block__btn {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -245,7 +230,7 @@
         -ms-flex-align: center;
             align-items: center;
 }
-.hero-btn {
+.hero__btn {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -277,17 +262,18 @@
             justify-content: center;
     width: 20px;
     height: 20px;
-    background: #fffaf5;
-    border-radius: 50%;
+    padding: 4px;
     margin-left: 10px;
+    border-radius: 50%;
+    background: #fffaf5;
     -webkit-box-shadow: 4px 3px 10px -1px rgba(191, 41, 0, 0.4);
             box-shadow: 4px 3px 10px -1px rgba(191, 41, 0, 0.4);
 }
 .hero-btn__link {
+    padding: 14px;
     font-weight: 500;
     font-size: 1.6rem;
     margin-left: 12px;
-    padding: 14px;
     color: var(--main-color);
     -webkit-text-decoration-line: underline;
             text-decoration-line: underline;
@@ -330,7 +316,7 @@
 
 .about__list {
     display: -ms-grid;
-    display: grid;
+    display: grid;  
     -ms-grid-columns: auto 36px auto;
     grid-template-columns: auto auto;
     gap: 34px 36px;
